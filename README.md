@@ -2,6 +2,12 @@
 
 A comprehensive multi-modal AI application built for the **IIT Madras 2025 - Internship Assignment**. This playground allows users to interact with various AI-powered tools for document analysis, image processing, and conversation analysis.
 
+## 🌐 Live Demo
+
+**🎮 Frontend**: [https://p-livo-ai-playground.vercel.app/](https://p-livo-ai-playground.vercel.app/)  
+**🔗 Backend API**: [https://plivo-ai-playground.onrender.com/](https://plivo-ai-playground.onrender.com/)  
+**📚 API Documentation**: [https://plivo-ai-playground.onrender.com/docs](https://plivo-ai-playground.onrender.com/docs)
+
 ![Demo](https://img.shields.io/badge/Demo-Live-green?style=for-the-badge)
 ![Python](https://img.shields.io/badge/Python-3.13-blue?style=for-the-badge&logo=python)
 ![React](https://img.shields.io/badge/React-18-blue?style=for-the-badge&logo=react)
@@ -101,13 +107,22 @@ npm run dev
 ```
 
 ### 5. Access the Application
+
+**Local Development:**
 - **Frontend**: http://localhost:5173
 - **Backend API**: http://localhost:5001
 - **API Documentation**: http://localhost:5001/docs
 
+**Production (Live Demo):**
+- **Frontend**: https://p-livo-ai-playground.vercel.app/
+- **Backend API**: https://plivo-ai-playground.onrender.com/
+- **API Documentation**: https://plivo-ai-playground.onrender.com/docs
+
 ## ⚙️ Configuration
 
-### Backend Environment Variables (.env)
+### Backend Environment Variables
+
+**Local Development (.env):**
 ```env
 # Server Configuration
 PORT=5001
@@ -115,23 +130,36 @@ FRONTEND_URL=http://localhost:5173
 
 # Google Gemini API (Required)
 GEMINI_API_KEY=your_gemini_api_key_here
-GOOGLE_API_KEY=your_google_api_key_here
-
-# Optional: Additional Services
-OPENAI_API_KEY=your_openai_api_key_here
-ASSEMBLYAI_API_KEY=your_assemblyai_api_key_here
 ```
 
-### Frontend Environment Variables (.env)
+**Production (.env):**
+```env
+# Server Configuration
+PORT=5001
+FRONTEND_URL=https://p-livo-ai-playground.vercel.app
+
+# Google Gemini API (Required)
+GEMINI_API_KEY=your_gemini_api_key_here
+```
+
+### Frontend Environment Variables
+
+**Local Development (.env):**
 ```env
 # Backend API Configuration
 VITE_API_BASE_URL=http://localhost:5001/api/v1
 
 # App Configuration
 VITE_APP_NAME=Plivo AI Playground
+```
 
-# Optional: Authentication
-VITE_CLERK_PUBLISHABLE_KEY=your_clerk_key_here
+**Production (.env):**
+```env
+# Backend API Configuration
+VITE_API_BASE_URL=https://plivo-ai-playground.onrender.com/api/v1
+
+# App Configuration
+VITE_APP_NAME=Plivo AI Playground
 ```
 
 ## 📁 Project Structure
