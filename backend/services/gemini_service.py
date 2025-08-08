@@ -63,7 +63,7 @@ class GeminiService:
                 logger.info(f"Uploading image to Gemini File API")
                 
                 # Upload to Gemini File API
-                uploaded_file = self.client.files.upload(file=Path(tmp_file_path))
+                uploaded_file = self.client.files.upload(path=Path(tmp_file_path))
                 logger.info(f"File uploaded successfully: {uploaded_file.name}")
                 
                 # Wait for processing
@@ -133,7 +133,7 @@ class GeminiService:
             logger.info(f"Uploading PDF to Gemini File API: {pdf_path}")
             
             # Upload PDF file to Gemini
-            uploaded_file = self.client.files.upload(file=Path(pdf_path))
+            uploaded_file = self.client.files.upload(path=Path(pdf_path))
             logger.info(f"PDF uploaded successfully: {uploaded_file.name}")
             
             # Generate summary
@@ -158,7 +158,7 @@ class GeminiService:
             logger.info(f"Uploading audio to Gemini File API: {audio_path}")
             
             # Upload audio file to Gemini
-            uploaded_file = self.client.files.upload(file=Path(audio_path))
+            uploaded_file = self.client.files.upload(path=Path(audio_path))
             logger.info(f"Audio uploaded successfully: {uploaded_file.name}")
             
             # Analyze the audio
@@ -191,7 +191,7 @@ class GeminiService:
             logger.info("Uploading image to Gemini File API")
             
             # Upload image to Gemini File API
-            uploaded_file = self.client.files.upload(file=Path(tmp_file_path))
+            uploaded_file = self.client.files.upload(path=Path(tmp_file_path))
             logger.info(f"File uploaded successfully: {uploaded_file.name}")
             
             # Wait for processing
@@ -243,7 +243,7 @@ class GeminiService:
             logger.info("Uploading audio to Gemini File API for transcription")
             
             # Upload audio to Gemini File API
-            uploaded_file = self.client.files.upload(file=Path(tmp_file_path))
+            uploaded_file = self.client.files.upload(path=Path(tmp_file_path))
             logger.info(f"Audio uploaded successfully: {uploaded_file.name}")
             
             # Wait for processing
