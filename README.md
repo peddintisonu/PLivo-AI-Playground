@@ -146,20 +146,17 @@ GEMINI_API_KEY=your_gemini_api_key_here
 
 **Local Development (.env):**
 ```env
+# Clerk Authentication (Optional)
+VITE_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key_here
 # Backend API Configuration
 VITE_API_BASE_URL=http://localhost:5001/api/v1
-
-# App Configuration
-VITE_APP_NAME=Plivo AI Playground
 ```
 
 **Production (.env):**
 ```env
 # Backend API Configuration
+VITE_CLERK_PUBLISHABLE_KEY=pk_test_YWRqdXN0ZWQtYmx1ZWdpbGwtNzUuY2xlcmsuYWNjb3VudHMuZGV2JA
 VITE_API_BASE_URL=https://plivo-ai-playground.onrender.com/api/v1
-
-# App Configuration
-VITE_APP_NAME=Plivo AI Playground
 ```
 
 ## 📁 Project Structure
